@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export const metadata = {
   title: "Portfolio | LogoSolve",
@@ -120,9 +121,11 @@ export default function PortfolioPage() {
               <div key={item.id} className="group">
                 <Link href={`/portfolio/project-${item.id}`} className="block">
                   <div className="aspect-square rounded-lg overflow-hidden relative mb-4 shadow-sm group-hover:shadow-md transition-shadow">
-                    <img 
+                    <Image 
                       src={item.image} 
                       alt={item.title} 
+                      width={400}
+                      height={400}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-primary/90 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
@@ -234,7 +237,7 @@ export default function PortfolioPage() {
               <div className="absolute -top-10 -left-10 w-40 h-40 bg-primary/5 rounded-full"></div>
               <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-accent/5 rounded-full"></div>
               <div className="relative z-10 aspect-video bg-white p-4 rounded-lg shadow-lg">
-                <img src="/portfolio/placeholder-4.svg" alt="Design Process" className="w-full h-full object-cover rounded" />
+                <Image src="/portfolio/placeholder-4.svg" alt="Design Process" width={800} height={450} className="w-full h-full object-cover rounded" />
               </div>
             </div>
           </div>
@@ -247,7 +250,7 @@ export default function PortfolioPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold">Ready to Create Your Brand?</h2>
             <p className="mt-6 text-lg text-white/80">
-              Let's collaborate to develop a brand identity that captures your vision and connects with your audience.
+              Let&apos;s collaborate to develop a brand identity that captures your vision and connects with your audience.
             </p>
             <div className="mt-10">
               <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-primary" asChild>
