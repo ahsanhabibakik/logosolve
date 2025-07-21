@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://logosolve.com/sitemap.xml
