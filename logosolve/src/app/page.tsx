@@ -118,24 +118,24 @@ export default function Home() {
       </section>
 
       {/* Portfolio Preview Section */}
-      <section className="py-20 bg-stone-100">
+      <section className="py-20 bg-secondary/10">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-stone-900">Featured Projects</h2>
-            <p className="mt-4 text-lg text-stone-600 max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold">Featured Projects</h2>
+            <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
               A selection of our recent brand identity and design work
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[1, 2, 3, 4, 5, 6].map((item) => (
-              <div key={item} className="relative aspect-square bg-stone-200 rounded-lg overflow-hidden group">
-                <div className="absolute inset-0 bg-stone-800/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <div key={item} className="relative aspect-square bg-background rounded-lg overflow-hidden group shadow-md">
+                <div className="absolute inset-0 bg-primary/90 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <div className="text-center p-4">
                     <h3 className="text-white font-medium text-lg">Project Name {item}</h3>
-                    <p className="text-stone-200 text-sm mt-2">Brand Identity, Packaging</p>
-                    <Button variant="outline" size="sm" className="mt-4 text-white border-white hover:bg-white hover:text-stone-900">
-                      View Project
+                    <p className="text-white/80 text-sm mt-2">Brand Identity, Packaging</p>
+                    <Button variant="outline" size="sm" className="mt-4 text-white border-white hover:bg-white hover:text-primary" asChild>
+                      <Link href={`/portfolio/project-${item}`}>View Project</Link>
                     </Button>
                   </div>
                 </div>
@@ -144,7 +144,7 @@ export default function Home() {
           </div>
 
           <div className="mt-12 text-center">
-            <Button asChild>
+            <Button className="bg-primary hover:bg-primary/90 text-white" asChild>
               <Link href="/portfolio">View All Projects</Link>
             </Button>
           </div>
@@ -152,11 +152,11 @@ export default function Home() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-background">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-stone-900">Our Process</h2>
-            <p className="mt-4 text-lg text-stone-600 max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold">Our Process</h2>
+            <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
               A collaborative approach to creating effective brand identities
             </p>
           </div>
@@ -185,11 +185,11 @@ export default function Home() {
               }
             ].map((process) => (
               <div key={process.step} className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 rounded-full bg-stone-100 flex items-center justify-center mb-6">
-                  <span className="text-xl font-bold text-stone-700">{process.step}</span>
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+                  <span className="text-xl font-bold text-primary">{process.step}</span>
                 </div>
-                <h3 className="text-xl font-medium text-stone-900 mb-3">{process.title}</h3>
-                <p className="text-stone-600">{process.description}</p>
+                <h3 className="text-xl font-medium mb-3">{process.title}</h3>
+                <p className="text-muted-foreground">{process.description}</p>
               </div>
             ))}
           </div>
@@ -197,15 +197,15 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-stone-900 text-white">
+      <section className="py-20 bg-primary text-white">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold">Ready to Transform Your Brand?</h2>
-            <p className="mt-6 text-lg text-stone-300">
+            <p className="mt-6 text-lg text-white/80">
               Let's collaborate to create a brand identity that resonates with your audience and helps your business thrive.
             </p>
             <div className="mt-10">
-              <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-stone-900" asChild>
+              <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-primary" asChild>
                 <Link href="/contact">Get Started</Link>
               </Button>
             </div>
