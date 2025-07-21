@@ -289,7 +289,7 @@ export default function ProjectPage() {
               </div>
               <div>
                 <p className="text-muted-foreground mb-6 italic">
-                  "LogoSolve transformed our brand identity completely. The new logo and visual system perfectly capture our company&apos;s values and have helped us connect with our target audience in a meaningful way. Since the rebrand, we&apos;ve seen significant growth in sales and brand recognition. The team was professional, creative, and truly understood our vision."
+                &quot;LogoSolve transformed our brand identity completely. The new logo and visual system perfectly capture our company&apos;s values and have helped us connect with our target audience in a meaningful way. Since the rebrand, we&apos;ve seen significant growth in sales and brand recognition. The team was professional, creative, and truly understood our vision.&quot;
                 </p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
