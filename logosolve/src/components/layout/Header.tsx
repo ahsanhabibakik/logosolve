@@ -21,7 +21,7 @@ const Header = () => {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-stone-800">Logo<span className="text-stone-600">Solve</span></span>
+            <span className="text-2xl font-bold">Logo<span className="text-primary">Solve</span></span>
           </Link>
         </div>
 
@@ -31,12 +31,12 @@ const Header = () => {
             <Link
               key={item.name}
               href={item.href}
-              className="text-sm font-medium text-stone-600 hover:text-stone-900 transition-colors"
+              className="text-sm font-medium hover:text-primary transition-colors"
             >
               {item.name}
             </Link>
           ))}
-          <Button>Get Started</Button>
+          <Button className="bg-primary hover:bg-primary/90 text-white">Get Started</Button>
         </nav>
 
         {/* Mobile Navigation */}
