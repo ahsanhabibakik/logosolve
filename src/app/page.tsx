@@ -50,6 +50,9 @@ export default function Home() {
       <section className="py-20 bg-background">
         <div className="container">
           <div className="text-center mb-16">
+            <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
+              What We Do
+            </div>
             <h2 className="text-3xl md:text-4xl font-bold">Our Services</h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
               Comprehensive brand identity solutions tailored to your unique business needs
@@ -140,6 +143,9 @@ export default function Home() {
       <section className="py-20 bg-secondary/10">
         <div className="container">
           <div className="text-center mb-16">
+            <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
+              Our Work
+            </div>
             <h2 className="text-3xl md:text-4xl font-bold">Featured Projects</h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
               A selection of our recent brand identity and design work
@@ -184,8 +190,75 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      <section className="py-20 bg-background">
+        <div className="container">
+          <div className="text-center mb-16">
+            <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
+              Client Feedback
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold">What Our Clients Say</h2>
+            <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+              Don&apos;t just take our word for it — hear from some of our satisfied clients
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                quote: "LogoSolve transformed our brand identity completely. The new logo and visual system perfectly capture our company&apos;s values and have helped us stand out in a competitive market.",
+                author: "Sarah Johnson",
+                position: "Marketing Director",
+                company: "Acme Corp"
+              },
+              {
+                quote: "Working with LogoSolve was a game-changer for our product packaging. Their designs increased our shelf visibility and customer engagement significantly.",
+                author: "Michael Chen",
+                position: "Product Manager",
+                company: "Zenith Inc"
+              },
+              {
+                quote: "The team at LogoSolve delivered beyond our expectations. Their strategic approach to brand identity has given us a cohesive visual language that resonates with our audience.",
+                author: "Alex Rodriguez",
+                position: "CEO",
+                company: "Quantum Tech"
+              }
+            ].map((testimonial, index) => (
+              <div key={index} className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-border">
+                <div className="mb-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary/20">
+                    <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path>
+                    <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
+                  </svg>
+                </div>
+                <p className="text-muted-foreground mb-6 italic">"{testimonial.quote}"</p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-primary font-medium">{testimonial.author.charAt(0)}</span>
+                  </div>
+                  <div>
+                    <h4 className="font-medium">{testimonial.author}</h4>
+                    <p className="text-sm text-muted-foreground">{testimonial.position}, {testimonial.company}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Client Logos */}
+          <div className="mt-16">
+            <h3 className="text-center text-lg font-medium mb-8">Trusted by innovative companies</h3>
+            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+              <Image src="/clients/client-1.svg" alt="Acme Corp" width={48} height={48} className="h-12 opacity-70 hover:opacity-100 transition-opacity" />
+              <Image src="/clients/client-2.svg" alt="Zenith Inc" width={48} height={48} className="h-12 opacity-70 hover:opacity-100 transition-opacity" />
+              <Image src="/clients/client-3.svg" alt="Quantum Tech" width={48} height={48} className="h-12 opacity-70 hover:opacity-100 transition-opacity" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Process Section */}
-      <section className="py-20 bg-background relative overflow-hidden">
+      <section className="py-20 bg-secondary/10 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/hero-pattern.svg')] opacity-5"></div>
         <div className="container relative">
           <div className="text-center mb-16">
@@ -276,13 +349,115 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Creative Showcase Section */}
+      <section className="py-20 bg-background overflow-hidden">
+        <div className="container">
+          <div className="text-center mb-16">
+            <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
+              Our Creativity
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold">Design Elements</h2>
+            <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+              Explore the visual elements that make our brand identities stand out
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="aspect-square bg-primary/5 rounded-lg flex items-center justify-center p-6 hover:bg-primary/10 transition-colors">
+              <div className="w-full h-full rounded-full bg-primary/20"></div>
+            </div>
+            <div className="aspect-square bg-primary/5 rounded-lg flex items-center justify-center p-6 hover:bg-primary/10 transition-colors">
+              <div className="w-full h-full bg-primary/20 rounded-lg"></div>
+            </div>
+            <div className="aspect-square bg-primary/5 rounded-lg flex items-center justify-center p-6 hover:bg-primary/10 transition-colors">
+              <div className="w-full h-full bg-primary/20" style={{ clipPath: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)" }}></div>
+            </div>
+            <div className="aspect-square bg-primary/5 rounded-lg flex items-center justify-center p-6 hover:bg-primary/10 transition-colors">
+              <div className="w-full h-full bg-primary/20" style={{ clipPath: "polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)" }}></div>
+            </div>
+            <div className="aspect-square bg-accent/5 rounded-lg flex items-center justify-center p-6 hover:bg-accent/10 transition-colors">
+              <div className="w-full h-full bg-accent/20" style={{ clipPath: "circle(50% at 50% 50%)" }}></div>
+            </div>
+            <div className="aspect-square bg-accent/5 rounded-lg flex items-center justify-center p-6 hover:bg-accent/10 transition-colors">
+              <div className="w-full h-full bg-accent/20 rounded-lg"></div>
+            </div>
+            <div className="aspect-square bg-accent/5 rounded-lg flex items-center justify-center p-6 hover:bg-accent/10 transition-colors">
+              <div className="w-full h-full bg-accent/20" style={{ clipPath: "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)" }}></div>
+            </div>
+            <div className="aspect-square bg-accent/5 rounded-lg flex items-center justify-center p-6 hover:bg-accent/10 transition-colors">
+              <div className="w-full h-full bg-accent/20" style={{ clipPath: "polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%)" }}></div>
+            </div>
+          </div>
+
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="p-6 bg-white rounded-lg shadow-sm">
+              <h3 className="text-xl font-medium mb-4">Typography</h3>
+              <div className="space-y-4">
+                <div>
+                  <p className="text-xs text-muted-foreground mb-1">Heading</p>
+                  <p className="text-2xl font-bold">Aa Bb Cc Dd Ee</p>
+                </div>
+                <div>
+                  <p className="text-xs text-muted-foreground mb-1">Body</p>
+                  <p className="text-base">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-6 bg-white rounded-lg shadow-sm">
+              <h3 className="text-xl font-medium mb-4">Color Palette</h3>
+              <div className="grid grid-cols-4 gap-2">
+                <div className="aspect-square bg-primary rounded-md"></div>
+                <div className="aspect-square bg-primary/80 rounded-md"></div>
+                <div className="aspect-square bg-primary/60 rounded-md"></div>
+                <div className="aspect-square bg-primary/40 rounded-md"></div>
+                <div className="aspect-square bg-accent rounded-md"></div>
+                <div className="aspect-square bg-accent/80 rounded-md"></div>
+                <div className="aspect-square bg-accent/60 rounded-md"></div>
+                <div className="aspect-square bg-accent/40 rounded-md"></div>
+              </div>
+            </div>
+            <div className="p-6 bg-white rounded-lg shadow-sm">
+              <h3 className="text-xl font-medium mb-4">Iconography</h3>
+              <div className="grid grid-cols-4 gap-4">
+                <div className="aspect-square bg-primary/10 rounded-md flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="m16 12-4 4-4-4"></path>
+                    <path d="M12 8v8"></path>
+                  </svg>
+                </div>
+                <div className="aspect-square bg-primary/10 rounded-md flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                </div>
+                <div className="aspect-square bg-primary/10 rounded-md flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
+                    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    <circle cx="13.5" cy="7.5" r=".5"></circle>
+                  </svg>
+                </div>
+                <div className="aspect-square bg-primary/10 rounded-md flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
+                    <path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z"></path>
+                    <path d="m3 9 2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9"></path>
+                    <path d="M12 3v6"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-primary text-white">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold">Ready to Transform Your Brand?</h2>
             <p className="mt-6 text-lg text-white/80">
-              Let's collaborate to create a brand identity that resonates with your audience and helps your business thrive.
+              Let&apos;s collaborate to create a brand identity that resonates with your audience and helps your business thrive.
             </p>
             <div className="mt-10">
               <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-primary" asChild>

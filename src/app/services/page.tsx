@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const metadata = {
   title: "Services | LogoSolve",
@@ -175,7 +174,7 @@ export default function ServicesPage() {
           <h2 className="text-3xl font-bold mb-12 text-center">Our Services in Detail</h2>
           
           <div className="space-y-16">
-            {services.map((service, index) => (
+            {services.map((service) => (
               <div key={service.id} className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div className="bg-background rounded-lg aspect-video flex items-center justify-center">
                   <div className="text-center text-muted-foreground">
