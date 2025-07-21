@@ -20,7 +20,7 @@ export default function Home() {
                 Crafting Distinctive <span className="text-primary">Brand Identities</span> That Resonate
               </h1>
               <p className="mt-6 text-lg md:text-xl text-muted-foreground">
-                We create compelling brand identities, memorable logos, and impactful packaging designs that help businesses stand out in today's competitive market.
+                We create compelling brand identities, memorable logos, and impactful packaging designs that help businesses stand out in today&apos;s competitive market.
               </p>
               <div className="mt-10 flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-white" asChild>
@@ -36,7 +36,7 @@ export default function Home() {
                 <div className="absolute top-0 left-0 w-64 h-64 bg-primary/10 rounded-lg transform -rotate-6"></div>
                 <div className="absolute top-10 left-10 w-64 h-64 bg-accent/10 rounded-lg transform rotate-6"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <img src="/portfolio/placeholder-1.svg" alt="Brand Identity Example" className="w-56 h-56 rounded-lg shadow-lg" />
+                  <Image src="/portfolio/placeholder-1.svg" alt="Brand Identity Example" width={224} height={224} className="w-56 h-56 rounded-lg shadow-lg" />
                 </div>
                 <div className="absolute bottom-0 right-0 w-40 h-40 bg-primary/10 rounded-lg transform rotate-12"></div>
                 <div className="absolute bottom-10 right-10 w-40 h-40 bg-accent/10 rounded-lg transform -rotate-12"></div>
@@ -92,12 +92,12 @@ export default function Home() {
                 </div>
                 <CardTitle className="text-xl">Logo Design</CardTitle>
                 <CardDescription>
-                  Memorable logos that capture your brand's essence
+                  Memorable logos that capture your brand&apos;s essence
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Our logo design process focuses on creating distinctive, versatile marks that work across all mediums and stand the test of time while conveying your brand's personality.
+                  Our logo design process focuses on creating distinctive, versatile marks that work across all mediums and stand the test of time while conveying your brand&apos;s personality.
                 </p>
               </CardContent>
               <CardFooter>
@@ -156,9 +156,11 @@ export default function Home() {
               { id: 6, name: "Nomad Adventures", category: "Packaging Design", image: "/portfolio/placeholder-6.svg" }
             ].map((project) => (
               <div key={project.id} className="relative aspect-square rounded-lg overflow-hidden group shadow-md">
-                <img 
+                <Image 
                   src={project.image} 
                   alt={project.name} 
+                  width={224}
+                  height={224}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-primary/90 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">

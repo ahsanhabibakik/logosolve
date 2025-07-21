@@ -16,7 +16,7 @@ export default function AboutPage() {
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">About LogoSolve</h1>
             <p className="text-lg text-muted-foreground">
-              We're a passionate team of designers and brand strategists dedicated to helping businesses establish memorable brand identities.
+              We&apos;re a passionate team of designers and brand strategists dedicated to helping businesses establish memorable brand identities.
             </p>
           </div>
         </div>
@@ -55,7 +55,7 @@ export default function AboutPage() {
             {[
               {
                 title: "Excellence",
-                description: "We're committed to delivering exceptional quality in everything we do, from initial concepts to final deliverables."
+                description: "We&apos;re committed to delivering exceptional quality in everything we do, from initial concepts to final deliverables."
               },
               {
                 title: "Collaboration",
@@ -128,7 +128,7 @@ export default function AboutPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold">Ready to Work Together?</h2>
             <p className="mt-6 text-lg text-white/80">
-              Let's collaborate to create a brand identity that resonates with your audience and helps your business thrive.
+              Let&apos;s collaborate to create a brand identity that resonates with your audience and helps your business thrive.
             </p>
             <div className="mt-10">
               <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-primary" asChild>

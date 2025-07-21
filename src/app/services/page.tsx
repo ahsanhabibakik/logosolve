@@ -38,8 +38,8 @@ const services = [
         <circle cx="13.5" cy="7.5" r=".5"></circle>
       </svg>
     ),
-    shortDescription: "Memorable logos that capture your brand's essence",
-    fullDescription: "Our logo design service focuses on creating a distinctive visual mark that represents your brand's personality and values. We craft logos that are not only visually appealing but also versatile and timeless.",
+    shortDescription: "Memorable logos that capture your brand&apos;s essence",
+    fullDescription: "Our logo design service focuses on creating a distinctive visual mark that represents your brand&apos;s personality and values. We craft logos that are not only visually appealing but also versatile and timeless.",
     deliverables: [
       "Brand discovery and research",
       "Multiple concept directions",
@@ -191,7 +191,7 @@ export default function ServicesPage() {
                   <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
                   <p className="text-muted-foreground mb-6">{service.fullDescription}</p>
                   
-                  <h4 className="font-medium mb-3">What's Included:</h4>
+                  <h4 className="font-medium mb-3">What&apos;s Included:</h4>
                   <ul className="space-y-2 mb-8">
                     {service.deliverables.map((item, i) => (
                       <li key={i} className="flex items-start gap-2">

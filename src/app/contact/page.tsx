@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import ContactForm from "@/components/contact/ContactForm";
 
@@ -16,7 +15,7 @@ export default function ContactPage() {
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Get in Touch</h1>
             <p className="text-lg text-muted-foreground">
-              Ready to discuss your brand identity needs? We'd love to hear from you and help bring your vision to life.
+              Ready to discuss your brand identity needs? We&apos;d love to hear from you and help bring your vision to life.
             </p>
           </div>
         </div>
@@ -29,7 +28,7 @@ export default function ContactPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
               <p className="text-muted-foreground mb-8">
-                Fill out the form below, and we'll get back to you as soon as possible to discuss how we can help with your brand identity needs.
+                Fill out the form below, and we&apos;ll get back to you as soon as possible to discuss how we can help with your brand identity needs.
               </p>
               
               <ContactForm />

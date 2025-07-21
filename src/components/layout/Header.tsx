@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import Image from "next/image";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +22,7 @@ const Header = () => {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center space-x-2">
-            <img src="/logo.svg" alt="LogoSolve" width="140" height="32" className="h-8 w-auto" />
+            <Image src="/logo.svg" alt="LogoSolve" width={140} height={32} className="h-8 w-auto" />
           </Link>
         </div>
 

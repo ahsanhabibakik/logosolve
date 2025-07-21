@@ -139,7 +139,7 @@ export default function PortfolioPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold">Ready to Create Your Brand?</h2>
             <p className="mt-6 text-lg text-white/80">
-              Let's collaborate to develop a brand identity that captures your vision and connects with your audience.
+              Let&apos;s collaborate to develop a brand identity that captures your vision and connects with your audience.
             </p>
             <div className="mt-10">
               <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-primary" asChild>
