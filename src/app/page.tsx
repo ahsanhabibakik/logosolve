@@ -7,22 +7,41 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-background to-secondary/10">
+      <section className="relative overflow-hidden bg-gradient-to-b from-background to-secondary/10 py-20 md:py-32">
         <div className="absolute inset-0 bg-[url('/hero-pattern.svg')] opacity-5"></div>
-        <div className="container relative py-20 md:py-32 flex flex-col items-center text-center">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight max-w-3xl">
-            Crafting Distinctive <span className="text-primary">Brand Identities</span> That Resonate
-          </h1>
-          <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl">
-            We create compelling brand identities, memorable logos, and impactful packaging designs that help businesses stand out in today's competitive market.
-          </p>
-          <div className="mt-10 flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white" asChild>
-              <Link href="/portfolio">View Our Work</Link>
-            </Button>
-            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10" asChild>
-              <Link href="/contact">Get in Touch</Link>
-            </Button>
+        <div className="absolute inset-0 bg-[url('/hero-shapes.svg')] bg-no-repeat bg-cover opacity-70"></div>
+        <div className="container relative">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
+              <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
+                Brand Identity Agency
+              </div>
+              <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+                Crafting Distinctive <span className="text-primary">Brand Identities</span> That Resonate
+              </h1>
+              <p className="mt-6 text-lg md:text-xl text-muted-foreground">
+                We create compelling brand identities, memorable logos, and impactful packaging designs that help businesses stand out in today's competitive market.
+              </p>
+              <div className="mt-10 flex flex-col sm:flex-row gap-4">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white" asChild>
+                  <Link href="/portfolio">View Our Work</Link>
+                </Button>
+                <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10" asChild>
+                  <Link href="/contact">Get in Touch</Link>
+                </Button>
+              </div>
+            </div>
+            <div className="hidden lg:flex justify-center items-center">
+              <div className="relative w-full max-w-md aspect-square">
+                <div className="absolute top-0 left-0 w-64 h-64 bg-primary/10 rounded-lg transform -rotate-6"></div>
+                <div className="absolute top-10 left-10 w-64 h-64 bg-accent/10 rounded-lg transform rotate-6"></div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <img src="/portfolio/placeholder-1.svg" alt="Brand Identity Example" className="w-56 h-56 rounded-lg shadow-lg" />
+                </div>
+                <div className="absolute bottom-0 right-0 w-40 h-40 bg-primary/10 rounded-lg transform rotate-12"></div>
+                <div className="absolute bottom-10 right-10 w-40 h-40 bg-accent/10 rounded-lg transform -rotate-12"></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -164,46 +183,93 @@ export default function Home() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-background">
-        <div className="container">
+      <section className="py-20 bg-background relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/hero-pattern.svg')] opacity-5"></div>
+        <div className="container relative">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold">Our Process</h2>
+            <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
+              Our Approach
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold">Our Design Process</h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
               A collaborative approach to creating effective brand identities
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                step: "01",
-                title: "Discovery",
-                description: "We learn about your business, goals, audience, and competition to understand your unique needs."
-              },
-              {
-                step: "02",
-                title: "Strategy",
-                description: "We develop a strategic foundation for your brand that aligns with your business objectives."
-              },
-              {
-                step: "03",
-                title: "Design",
-                description: "Our creative team crafts visual elements that bring your brand to life in a distinctive way."
-              },
-              {
-                step: "04",
-                title: "Delivery",
-                description: "We provide all the assets and guidelines you need to implement your new brand identity."
-              }
-            ].map((process) => (
-              <div key={process.step} className="flex flex-col items-center text-center">
-                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                  <span className="text-xl font-bold text-primary">{process.step}</span>
+          <div className="relative">
+            {/* Connection Line */}
+            <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-primary/10 via-primary/30 to-primary/10 transform -translate-y-1/2 z-0"></div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
+              {[
+                {
+                  step: "01",
+                  title: "Discovery",
+                  description: "We learn about your business, goals, audience, and competition to understand your unique needs.",
+                  icon: (
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="12" y1="8" x2="12" y2="12"></line>
+                      <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                    </svg>
+                  )
+                },
+                {
+                  step: "02",
+                  title: "Strategy",
+                  description: "We develop a strategic foundation for your brand that aligns with your business objectives.",
+                  icon: (
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
+                      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                      <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                    </svg>
+                  )
+                },
+                {
+                  step: "03",
+                  title: "Design",
+                  description: "Our creative team crafts visual elements that bring your brand to life in a distinctive way.",
+                  icon: (
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
+                      <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                      <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                      <path d="M2 2l7.586 7.586"></path>
+                      <circle cx="11" cy="11" r="2"></circle>
+                    </svg>
+                  )
+                },
+                {
+                  step: "04",
+                  title: "Delivery",
+                  description: "We provide all the assets and guidelines you need to implement your new brand identity.",
+                  icon: (
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
+                      <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
+                      <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
+                    </svg>
+                  )
+                }
+              ].map((process) => (
+                <div key={process.step} className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                  <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+                    <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center">
+                      <span className="text-xl font-bold text-primary">{process.step}</span>
+                    </div>
+                  </div>
+                  <div className="mb-4">
+                    {process.icon}
+                  </div>
+                  <h3 className="text-xl font-medium mb-3">{process.title}</h3>
+                  <p className="text-muted-foreground">{process.description}</p>
                 </div>
-                <h3 className="text-xl font-medium mb-3">{process.title}</h3>
-                <p className="text-muted-foreground">{process.description}</p>
-              </div>
-            ))}
+              ))}
+            </div>
+          </div>
+          
+          <div className="mt-16 text-center">
+            <Button className="bg-primary hover:bg-primary/90 text-white" asChild>
+              <Link href="/services">Learn About Our Services</Link>
+            </Button>
           </div>
         </div>
       </section>

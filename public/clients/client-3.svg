@@ -1,0 +1,6 @@
+<svg width="200" height="80" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="80" fill="white"/>
+  <path d="M40 30L60 50L80 30L60 50L40 30Z" fill="#5D3FD3" opacity="0.3"/>
+  <path d="M90 30H160V50H90V30Z" fill="#5D3FD3" opacity="0.1"/>
+  <text x="125" y="45" font-family="Arial" font-size="16" fill="#333333" text-anchor="middle">QUANTUM TECH</text>
+</svg>
