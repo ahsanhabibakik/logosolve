@@ -128,14 +128,26 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[1, 2, 3, 4, 5, 6].map((item) => (
-              <div key={item} className="relative aspect-square bg-background rounded-lg overflow-hidden group shadow-md">
+            {[
+              { id: 1, name: "Evergreen Organics", category: "Brand Identity", image: "/portfolio/placeholder-1.svg" },
+              { id: 2, name: "Pulse Fitness", category: "Logo Design", image: "/portfolio/placeholder-2.svg" },
+              { id: 3, name: "Azure Tech", category: "Visual Identity", image: "/portfolio/placeholder-3.svg" },
+              { id: 4, name: "Bloom Cosmetics", category: "Brand System", image: "/portfolio/placeholder-4.svg" },
+              { id: 5, name: "Harvest Cafe", category: "Brand Guidelines", image: "/portfolio/placeholder-5.svg" },
+              { id: 6, name: "Nomad Adventures", category: "Packaging Design", image: "/portfolio/placeholder-6.svg" }
+            ].map((project) => (
+              <div key={project.id} className="relative aspect-square rounded-lg overflow-hidden group shadow-md">
+                <img 
+                  src={project.image} 
+                  alt={project.name} 
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
                 <div className="absolute inset-0 bg-primary/90 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <div className="text-center p-4">
-                    <h3 className="text-white font-medium text-lg">Project Name {item}</h3>
-                    <p className="text-white/80 text-sm mt-2">Brand Identity, Packaging</p>
+                    <h3 className="text-white font-medium text-lg">{project.name}</h3>
+                    <p className="text-white/80 text-sm mt-2">{project.category}</p>
                     <Button variant="outline" size="sm" className="mt-4 text-white border-white hover:bg-white hover:text-primary" asChild>
-                      <Link href={`/portfolio/project-${item}`}>View Project</Link>
+                      <Link href={`/portfolio/project-${project.id}`}>View Project</Link>
                     </Button>
                   </div>
                 </div>
