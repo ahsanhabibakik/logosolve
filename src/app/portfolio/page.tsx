@@ -119,7 +119,7 @@ export default function PortfolioPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {portfolioItems.map((item) => (
               <div key={item.id} className="group">
-                <Link href={`/portfolio/project-${item.id}`} className="block">
+                <Link href={`/portfolio/${item.title.toLowerCase().replace(/\s+/g, '-')}`} className="block">
                   <div className="aspect-square rounded-lg overflow-hidden relative mb-4 shadow-sm group-hover:shadow-md transition-shadow">
                     <Image 
                       src={item.image} 
@@ -136,7 +136,7 @@ export default function PortfolioPage() {
                   </div>
                 </Link>
                 <h3 className="text-xl font-medium mb-1">
-                  <Link href={`/portfolio/project-${item.id}`} className="hover:text-primary transition-colors">
+                  <Link href={`/portfolio/${item.title.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-primary transition-colors">
                     {item.title}
                   </Link>
                 </h3>

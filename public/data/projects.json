@@ -1,0 +1,259 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Evergreen Organics",
+      "slug": "evergreen-organics",
+      "category": "Brand Identity",
+      "tags": ["Food & Beverage", "Organic", "Sustainable"],
+      "client": "Evergreen Foods Inc.",
+      "year": "2023",
+      "duration": "8 weeks",
+      "description": "A complete brand identity system for an organic food company, including logo, packaging, and brand guidelines.",
+      "challenge": "Evergreen Organics needed a brand refresh as they expanded their product line and entered new markets. They required a cohesive identity that would communicate their commitment to organic, sustainable products while standing out in a competitive market.",
+      "solution": "We developed a comprehensive brand identity that reflects the natural, organic qualities of their products while maintaining a modern, premium feel. The new visual system includes a distinctive logo, earthy color palette, and clean typography that works across all touchpoints.",
+      "results": [
+        "42% increase in brand recognition",
+        "28% growth in sales within the first quarter after rebrand",
+        "95% positive feedback from customer surveys"
+      ],
+      "services": [
+        "Logo Design",
+        "Color Palette",
+        "Typography",
+        "Packaging Design",
+        "Brand Guidelines"
+      ],
+      "testimonial": {
+        "quote": "LogoSolve transformed our brand identity completely. The new logo and visual system perfectly capture our company's values and have helped us connect with our target audience in a meaningful way.",
+        "author": "Jennifer Miller",
+        "position": "Marketing Director",
+        "company": "Evergreen Organics"
+      },
+      "images": [
+        "/portfolio/projects/evergreen/main.svg",
+        "/portfolio/projects/evergreen/logo.svg",
+        "/portfolio/projects/evergreen/packaging.svg",
+        "/portfolio/projects/evergreen/guidelines.svg"
+      ],
+      "thumbnail": "/portfolio/placeholder-1.svg",
+      "website": "https://example.com/evergreen",
+      "socialMedia": {
+        "facebook": "https://facebook.com/evergreenorganics",
+        "instagram": "https://instagram.com/evergreenorganics"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Pulse Fitness",
+      "slug": "pulse-fitness",
+      "category": "Logo Design",
+      "tags": ["Fitness", "Health", "Lifestyle"],
+      "client": "Pulse Fitness Centers",
+      "year": "2023",
+      "duration": "6 weeks",
+      "description": "A dynamic logo and visual identity for a modern fitness center chain.",
+      "challenge": "Pulse Fitness needed a vibrant, energetic brand identity to appeal to their target demographic of young, health-conscious professionals. Their existing branding felt outdated and didn't reflect their modern approach to fitness.",
+      "solution": "We created a bold, dynamic logo that incorporates a heartbeat motif, symbolizing health and vitality. The visual identity features a vibrant color palette, energetic typography, and a flexible design system that works across digital and physical touchpoints.",
+      "results": [
+        "35% increase in new membership sign-ups",
+        "48% improvement in brand recognition among target demographic",
+        "22% increase in social media engagement"
+      ],
+      "services": [
+        "Logo Design",
+        "Visual Identity",
+        "Brand Guidelines",
+        "Marketing Materials"
+      ],
+      "testimonial": {
+        "quote": "The team at LogoSolve understood exactly what we needed. Our new brand identity perfectly captures the energy and dynamism of our fitness centers and has resonated strongly with our target audience.",
+        "author": "David Chen",
+        "position": "CEO",
+        "company": "Pulse Fitness"
+      },
+      "images": [
+        "/portfolio/projects/pulse/main.svg",
+        "/portfolio/projects/pulse/logo.svg",
+        "/portfolio/projects/pulse/applications.svg",
+        "/portfolio/projects/pulse/marketing.svg"
+      ],
+      "thumbnail": "/portfolio/placeholder-2.svg",
+      "website": "https://example.com/pulsefitness",
+      "socialMedia": {
+        "instagram": "https://instagram.com/pulsefitness",
+        "twitter": "https://twitter.com/pulsefitness"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Azure Tech",
+      "slug": "azure-tech",
+      "category": "Visual Identity",
+      "tags": ["Technology", "B2B", "Digital"],
+      "client": "Azure Technologies Inc.",
+      "year": "2022",
+      "duration": "10 weeks",
+      "description": "A sleek, modern brand identity for a technology startup focused on cloud solutions.",
+      "challenge": "Azure Tech needed a sophisticated brand identity that would position them as a trustworthy, innovative player in the competitive cloud solutions market. They needed to appeal to enterprise clients while maintaining a modern, tech-forward appearance.",
+      "solution": "We developed a clean, minimalist visual identity with a focus on clarity and precision. The design system includes a geometric logo, a cool color palette dominated by blues and teals, and a custom icon set for their various service offerings.",
+      "results": [
+        "52% increase in enterprise client inquiries",
+        "40% improvement in perceived trustworthiness according to client surveys",
+        "3 major enterprise contracts secured within 6 months of rebrand"
+      ],
+      "services": [
+        "Logo Design",
+        "Visual Identity",
+        "UI/UX Guidelines",
+        "Digital Assets",
+        "Brand Guidelines"
+      ],
+      "testimonial": {
+        "quote": "LogoSolve delivered a brand identity that perfectly balances professionalism with innovation. Our new visual identity has been instrumental in helping us secure major enterprise clients.",
+        "author": "Sarah Wong",
+        "position": "Marketing Director",
+        "company": "Azure Technologies"
+      },
+      "images": [
+        "/portfolio/projects/azure/main.svg",
+        "/portfolio/projects/azure/logo.svg",
+        "/portfolio/projects/azure/digital.svg",
+        "/portfolio/projects/azure/applications.svg"
+      ],
+      "thumbnail": "/portfolio/placeholder-3.svg",
+      "website": "https://example.com/azuretech",
+      "socialMedia": {
+        "linkedin": "https://linkedin.com/company/azuretech",
+        "twitter": "https://twitter.com/azuretech"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Bloom Cosmetics",
+      "slug": "bloom-cosmetics",
+      "category": "Brand System",
+      "tags": ["Beauty", "Luxury", "Retail"],
+      "client": "Bloom Beauty Inc.",
+      "year": "2023",
+      "duration": "12 weeks",
+      "description": "Elegant packaging design and brand identity for a premium cosmetics line.",
+      "challenge": "Bloom Cosmetics was launching a new line of premium, natural beauty products and needed packaging and branding that would convey luxury while emphasizing their natural, sustainable ingredients.",
+      "solution": "We created an elegant brand identity featuring delicate floral motifs, a sophisticated color palette of soft pinks and golds, and premium packaging with sustainable materials. The design system includes custom patterns, typography, and a cohesive packaging system for their entire product line.",
+      "results": [
+        "Successful launch with 85% of initial inventory sold within first month",
+        "Featured in three major beauty publications",
+        "62% of customers cited packaging as a factor in their purchase decision"
+      ],
+      "services": [
+        "Brand Identity",
+        "Packaging Design",
+        "Pattern Design",
+        "Product Photography Direction"
+      ],
+      "testimonial": {
+        "quote": "The packaging and branding that LogoSolve created for us has been a key factor in our successful launch. Our products stand out on shelves and convey exactly the premium, natural image we wanted to achieve.",
+        "author": "Emily Zhang",
+        "position": "Founder",
+        "company": "Bloom Cosmetics"
+      },
+      "images": [
+        "/portfolio/projects/bloom/main.svg",
+        "/portfolio/projects/bloom/packaging.svg",
+        "/portfolio/projects/bloom/patterns.svg",
+        "/portfolio/projects/bloom/applications.svg"
+      ],
+      "thumbnail": "/portfolio/placeholder-4.svg",
+      "website": "https://example.com/bloomcosmetics",
+      "socialMedia": {
+        "instagram": "https://instagram.com/bloomcosmetics",
+        "pinterest": "https://pinterest.com/bloomcosmetics"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Harvest Cafe",
+      "slug": "harvest-cafe",
+      "category": "Brand Guidelines",
+      "tags": ["Food & Beverage", "Restaurant", "Local"],
+      "client": "Harvest Cafe Group",
+      "year": "2022",
+      "duration": "8 weeks",
+      "description": "A warm, inviting brand identity for a farm-to-table cafe, including logo and menu design.",
+      "challenge": "Harvest Cafe needed a brand identity that would communicate their farm-to-table ethos and create a warm, welcoming atmosphere for their customers. They wanted to emphasize their local sourcing and seasonal menu.",
+      "solution": "We developed a rustic yet modern brand identity featuring hand-drawn elements, a warm color palette inspired by natural ingredients, and textured materials. The comprehensive guidelines cover everything from logo usage to menu design, interior signage, and digital presence.",
+      "results": [
+        "30% increase in customer visits within 3 months of rebrand",
+        "25% increase in average check size",
+        "Successful expansion to two new locations using the new brand guidelines"
+      ],
+      "services": [
+        "Logo Design",
+        "Menu Design",
+        "Brand Guidelines",
+        "Interior Signage Concepts"
+      ],
+      "testimonial": {
+        "quote": "The brand identity LogoSolve created perfectly captures the essence of our cafe. The comprehensive guidelines have made it easy for us to maintain a consistent brand experience across all our locations.",
+        "author": "Thomas Brown",
+        "position": "Owner",
+        "company": "Harvest Cafe"
+      },
+      "images": [
+        "/portfolio/projects/harvest/main.svg",
+        "/portfolio/projects/harvest/logo.svg",
+        "/portfolio/projects/harvest/menu.svg",
+        "/portfolio/projects/harvest/interior.svg"
+      ],
+      "thumbnail": "/portfolio/placeholder-5.svg",
+      "website": "https://example.com/harvestcafe",
+      "socialMedia": {
+        "instagram": "https://instagram.com/harvestcafe",
+        "facebook": "https://facebook.com/harvestcafe"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Nomad Adventures",
+      "slug": "nomad-adventures",
+      "category": "Packaging Design",
+      "tags": ["Travel", "Adventure", "Lifestyle"],
+      "client": "Nomad Travel Co.",
+      "year": "2023",
+      "duration": "9 weeks",
+      "description": "An adventurous brand identity for a travel company specializing in unique experiences.",
+      "challenge": "Nomad Adventures needed a brand identity that would appeal to adventure-seeking travelers and communicate the unique, off-the-beaten-path experiences they offer. They wanted to stand out in the crowded travel market.",
+      "solution": "We created a bold, adventurous brand identity featuring a compass-inspired logo, a rich color palette inspired by global destinations, and rugged textures. The design system includes custom iconography for different types of adventures, photography guidelines, and digital templates.",
+      "results": [
+        "45% increase in website engagement",
+        "38% growth in bookings for premium adventure packages",
+        "Successful expansion into three new international markets"
+      ],
+      "services": [
+        "Brand Identity",
+        "Logo Design",
+        "Icon System",
+        "Digital Templates",
+        "Marketing Materials"
+      ],
+      "testimonial": {
+        "quote": "LogoSolve captured the spirit of adventure that defines our brand. The identity system they created has helped us connect with our target audience and differentiate ourselves in a competitive market.",
+        "author": "James Wilson",
+        "position": "Marketing Manager",
+        "company": "Nomad Travel Co."
+      },
+      "images": [
+        "/portfolio/projects/nomad/main.svg",
+        "/portfolio/projects/nomad/logo.svg",
+        "/portfolio/projects/nomad/icons.svg",
+        "/portfolio/projects/nomad/applications.svg"
+      ],
+      "thumbnail": "/portfolio/placeholder-6.svg",
+      "website": "https://example.com/nomadadventures",
+      "socialMedia": {
+        "instagram": "https://instagram.com/nomadadventures",
+        "twitter": "https://twitter.com/nomadadventures"
+      }
+    }
+  ]
+}

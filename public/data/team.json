@@ -1,0 +1,103 @@
+{
+  "founder": {
+    "name": "Alex Johnson",
+    "title": "Founder & Creative Director",
+    "bio": "Alex Johnson is the founder and creative director of LogoSolve, with over 15 years of experience in brand identity design. After working with major agencies in New York and London, Alex founded LogoSolve in 2018 with a vision to create meaningful brand identities that truly connect with audiences. Alex holds a Master's degree in Design from Parsons School of Design and has received numerous industry awards for innovative brand identity work.",
+    "image": "/team/founder.jpg",
+    "contact": {
+      "email": "alex@logosolve.com",
+      "phone": "+1 (234) 567-890"
+    },
+    "socialMedia": {
+      "dribbble": "https://dribbble.com/alexjohnson",
+      "behance": "https://behance.net/alexjohnson",
+      "linkedin": "https://linkedin.com/in/alexjohnson",
+      "instagram": "https://instagram.com/alexjohnson.design"
+    },
+    "education": [
+      {
+        "degree": "Master of Fine Arts in Design",
+        "institution": "Parsons School of Design",
+        "year": "2010"
+      },
+      {
+        "degree": "Bachelor of Arts in Graphic Design",
+        "institution": "Rhode Island School of Design",
+        "year": "2007"
+      }
+    ],
+    "awards": [
+      {
+        "name": "Design Excellence Award",
+        "organization": "American Institute of Graphic Arts",
+        "year": "2021"
+      },
+      {
+        "name": "Brand Impact Award",
+        "organization": "Creative Review",
+        "year": "2019"
+      },
+      {
+        "name": "Young Designer of the Year",
+        "organization": "Design Week",
+        "year": "2015"
+      }
+    ],
+    "featuredProjects": [1, 3, 5]
+  },
+  "team": [
+    {
+      "name": "Sarah Chen",
+      "title": "Brand Strategist",
+      "bio": "Sarah brings 10 years of experience in brand strategy, helping clients develop strategic foundations for their brands that align with business objectives. Her analytical approach combined with creative thinking helps bridge the gap between business goals and creative execution.",
+      "image": "/team/sarah.jpg",
+      "socialMedia": {
+        "linkedin": "https://linkedin.com/in/sarahchen",
+        "twitter": "https://twitter.com/sarahchen"
+      },
+      "featuredProjects": [2, 6]
+    },
+    {
+      "name": "Michael Rodriguez",
+      "title": "Senior Designer",
+      "bio": "Michael specializes in creating distinctive visual identities that capture the essence of each brand. With a background in both digital and print design, he ensures that brand identities work seamlessly across all touchpoints.",
+      "image": "/team/michael.jpg",
+      "socialMedia": {
+        "dribbble": "https://dribbble.com/michaelrodriguez",
+        "behance": "https://behance.net/michaelrodriguez"
+      },
+      "featuredProjects": [1, 4]
+    },
+    {
+      "name": "Emma Wilson",
+      "title": "Packaging Designer",
+      "bio": "Emma brings brands to life through innovative packaging solutions that stand out on shelves. Her expertise in sustainable materials and production techniques ensures that packaging is not only beautiful but also environmentally responsible.",
+      "image": "/team/emma.jpg",
+      "socialMedia": {
+        "instagram": "https://instagram.com/emma.packaging",
+        "behance": "https://behance.net/emmawilson"
+      },
+      "featuredProjects": [4, 6]
+    }
+  ],
+  "companyInfo": {
+    "founded": 2018,
+    "location": "New York, NY",
+    "about": "LogoSolve is a brand identity agency specializing in creating distinctive visual identities for businesses of all sizes. Our collaborative approach combines strategic thinking with creative excellence to develop brand identities that resonate with audiences and drive business success.",
+    "values": [
+      {
+        "title": "Excellence",
+        "description": "We're committed to delivering exceptional quality in everything we do, from initial concepts to final deliverables."
+      },
+      {
+        "title": "Collaboration",
+        "description": "We believe the best results come from working closely with our clients, understanding their vision and bringing it to life."
+      },
+      {
+        "title": "Innovation",
+        "description": "We constantly push creative boundaries to develop unique solutions that help our clients stand out in their markets."
+      }
+    ],
+    "clients": ["Evergreen Foods Inc.", "Pulse Fitness Centers", "Azure Technologies Inc.", "Bloom Beauty Inc.", "Harvest Cafe Group", "Nomad Travel Co."]
+  }
+}
