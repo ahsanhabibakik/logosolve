@@ -2,11 +2,10 @@
 const nextConfig = {
   // Basic configuration
   reactStrictMode: true,
-  swcMinify: true,
 
   // Image configuration
   images: {
-    domains: ['vercel.app', 'localhost'],
+    domains: ['vercel.app', 'localhost', 'logosolve.vercel.app', 'logosolve.com'],
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       {
