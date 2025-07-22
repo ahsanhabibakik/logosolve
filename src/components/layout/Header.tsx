@@ -22,7 +22,14 @@ const Header = () => {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center space-x-2">
-            <Image src="/logo.svg" alt="LogoSolve" width={140} height={32} className="h-8 w-auto" />
+            <Image
+              src="/logo.svg"
+              alt="LogoSolve"
+              width={140}
+              height={32}
+              className="h-8 w-auto"
+              priority
+            />
           </Link>
         </div>
 
