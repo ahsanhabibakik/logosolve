@@ -1,0 +1,16 @@
+[build]
+builder = "nixpacks"
+buildCommand = "pnpm install --no-frozen-lockfile && pnpm run build"
+
+[deploy]
+startCommand = "pnpm start"
+healthcheckPath = "/"
+healthcheckTimeout = 100
+restartPolicyType = "on-failure"
+
+[nixpacks]
+pkgs = ["nodejs"]
+node-version = "20"
+
+[nixpacks.plan.setup]
+packageManager = "pnpm"

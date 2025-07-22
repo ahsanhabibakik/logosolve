@@ -4,9 +4,16 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
 
-  // Image configuration - use unoptimized images to avoid potential issues
+  // Image configuration
   images: {
-    unoptimized: true,
+    domains: ['vercel.app', 'localhost'],
+    formats: ['image/avif', 'image/webp'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
   },
 
   // Disable type checking in build to avoid potential issues
@@ -22,10 +29,11 @@ const nextConfig = {
   // Disable source maps in production to reduce bundle size
   productionBrowserSourceMaps: false,
   
-  // Increase memory limit for builds
-  experimental: {
-    memoryBasedWorkersCount: true,
-  },
+  // Ensure proper handling of trailing slashes
+  trailingSlash: false,
+  
+  // Optimize for Vercel deployment
+  poweredByHeader: false,
 };
 
 module.exports = nextConfig;
