@@ -51,8 +51,8 @@
   --card-foreground: oklch(0.147 0.004 49.25);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.147 0.004 49.25);
-  /* Deep purple as primary color */
-  --primary: oklch(0.35 0.2 300);
+  /* Updated primary color for hero section test */
+  --primary: #4361ee;
   --primary-foreground: oklch(0.985 0.001 106.423);
   /* Light gray as secondary */
   --secondary: oklch(0.97 0.001 106.424);
@@ -89,8 +89,8 @@
   --card-foreground: oklch(0.985 0.001 106.423);
   --popover: oklch(0.2 0.02 280);
   --popover-foreground: oklch(0.985 0.001 106.423);
-  /* Lighter purple in dark mode */
-  --primary: oklch(0.6 0.2 300);
+  /* Use the same primary color as light mode for testing */
+  --primary: #4361ee;
   --primary-foreground: oklch(0.15 0.02 280);
   --secondary: oklch(0.25 0.02 280);
   --secondary-foreground: oklch(0.985 0.001 106.423);
