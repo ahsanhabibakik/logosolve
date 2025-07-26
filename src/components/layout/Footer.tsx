@@ -88,11 +88,13 @@ const Footer = () => {
                     href="https://dribbble.com/logosolve" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="flex items-center gap-2 px-3 py-2 bg-white/80 backdrop-blur-sm rounded-lg hover:bg-primary/10 transition-colors group"
+                    className="flex items-center gap-2 px-3 py-2 bg-background/80 dark:bg-[#181825]/80 backdrop-blur-sm rounded-lg hover:bg-primary/10 transition-colors group"
                     aria-label="Dribbble"
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="text-[#EA4C89] group-hover:text-[#EA4C89]">
-                      <path d="M12 0C5.372 0 0 5.373 0 12s5.372 12 12 12 12-5.373 12-12S18.628 0 12 0zm9.885 11.441c-2.575-.422-4.943-.445-7.103-.073a42.153 42.153 0 0 0-.767-1.68c2.31-1 4.165-2.358 5.548-4.082a9.863 9.863 0 0 1 2.322 5.835zm-3.842-7.282c-1.205 1.554-2.868 2.783-4.986 3.68a46.287 46.287 0 0 0-3.488-5.438A9.955 9.955 0 0 1 12 2.087c2.275 0 4.368.779 6.043 2.072zM7.527 3.166a44.59 44.59 0 0 1 3.537 5.381c-2.43.715-5.331 1.082-8.684 1.105a9.98 9.98 0 0 1 5.147-6.486zM2.087 12l.013-.256c3.849-.005 7.169-.448 9.95-1.322.233.475.456.95.67 1.424-3.38 1.057-6.165 3.222-8.337 6.48A9.865 9.865 0 0 1 2.087 12zm3.829 7.81c1.969-3.088 4.482-5.098 7.598-6.027a39.137 39.137 0 0 1 2.043 7.46c-3.349 1.291-6.953.666-9.641-1.433zm11.586.43a41.098 41.098 0 0 0-1.92-6.897c1.876-.265 3.94-.196 6.199.196a9.93 9.93 0 0 1-4.279 6.701z"/>
+                    {/* Official Dribbble SVG */}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
+                      <circle cx="12" cy="12" r="10" fill="#EA4C89"/>
+                      <path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10s10-4.477 10-10c0-5.523-4.477-10-10-10zm6.93 7.5c-1.06-.17-2.13-.26-3.19-.27-.14-.32-.28-.63-.44-.94C16.5 7.5 17.8 8.4 18.93 9.5zM12 4c1.7 0 3.29.56 4.56 1.5-1.13.97-2.47 1.7-3.97 2.13C11.7 6.3 11.1 5.1 10.5 4.13 11 4.05 11.5 4 12 4zm-2.07.36c.6.97 1.18 2.13 1.67 3.41-2.1.5-4.1.6-5.97.36C6.3 6.1 8.04 4.8 9.93 4.36zM4 12c0-.13 0-.26.01-.39 2.13.23 4.47.13 6.97-.33.2.47.39.95.56 1.44-2.7.8-5.1 2.3-6.97 4.36C4.21 15.1 4 13.58 4 12zm1.07 5.5c1.5-1.8 3.5-3.1 5.8-3.8.6 1.7 1.1 3.4 1.4 5.1-2.6-.3-4.8-1.6-7.2-3.3zm7.93 3.5c-.3-1.7-.8-3.4-1.4-5.1 2.2-.3 4.5-.2 6.8.2-1.2 2.1-3.2 3.6-5.4 4.9zm6.01-6.1c-2.3-.4-4.7-.5-7-.2-.2-.5-.4-1-.6-1.5 2.3-.5 4.5-1.5 6.3-3.1 1.1 1.4 1.7 3.1 1.3 4.8z" fill="#fff"/>
                     </svg>
                     <span className="text-sm font-medium">Dribbble</span>
                   </a>
@@ -101,11 +103,13 @@ const Footer = () => {
                     href="https://behance.net/logosolve" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="flex items-center gap-2 px-3 py-2 bg-white/80 backdrop-blur-sm rounded-lg hover:bg-primary/10 transition-colors group"
+                    className="flex items-center gap-2 px-3 py-2 bg-background/80 dark:bg-[#181825]/80 backdrop-blur-sm rounded-lg hover:bg-primary/10 transition-colors group"
                     aria-label="Behance"
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="text-[#1769FF] group-hover:text-[#1769FF]">
-                      <path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14h-8.027c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988h-6.466v-14.967h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zm-3.466-8.988h3.584c2.508 0 2.906-3-.312-3h-3.272v3zm3.391 3h-3.391v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"/>
+                    {/* Official Behance SVG */}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
+                      <rect width="24" height="24" rx="4" fill="#1769FF"/>
+                      <path d="M7.8 10.2c.6 0 1.1.1 1.6.2.5.1.9.3 1.2.5.3.2.6.5.8.9.2.4.3.9.3 1.4 0 .6-.1 1.1-.4 1.6-.3.4-.7.8-1.3 1 .8.2 1.3.6 1.7 1.1.4.5.6 1.2.6 2 0 .6-.1 1.2-.4 1.6-.2.5-.6.8-1 .9-.4.3-.9.5-1.5.6-.6.1-1.2.2-1.8.2H2v-9.8h5.8zm-.4 5c.5 0 .9-.1 1.2-.3.3-.2.5-.6.5-1.1 0-.3-.1-.5-.2-.7-.1-.2-.2-.3-.4-.4-.2-.1-.4-.2-.6-.2-.2 0-.5-.1-.8-.1H4.6v2.8h2.8zm.2 5.4c.3 0 .5 0 .8-.1.2 0 .5-.1.6-.2.2-.1.3-.3.4-.5.1-.2.2-.5.2-.8 0-.7-.2-1.1-.6-1.4-.4-.3-.9-.4-1.6-.4H4.6v3.4h3zm11.9 1.6c.4 0 .8 0 1.1-.1.3-.1.6-.2.8-.4.2-.2.4-.4.4-.6.1-.3.1-.6.1-.9 0-.4-.1-.7-.2-1-.1-.3-.3-.5-.5-.6-.2-.2-.5-.3-.8-.4-.3-.1-.7-.1-1-.1-.4 0-.7 0-1.1.1-.3.1-.6.2-.8.4-.2.2-.4.4-.5.6-.1.3-.2.6-.2.9 0 .4.1.7.1.9.1.3.2.5.4.6.2.2.5.3.8.4.3.1.7.1 1.1.1zm-1.1-6.2c.3 0 .6 0 .9-.1.3-.1.5-.2.7-.4.2-.2.3-.4.4-.6.1-.2.2-.5.2-.9 0-.3-.1-.6-.2-.9-.1-.2-.3-.4-.4-.6-.2-.1-.4-.2-.7-.3-.3-.1-.5-.1-.9-.1-.3 0-.6 0-.9.1-.3.1-.5.2-.7.3-.2.1-.3.3-.4.6-.1.2-.2.5-.2.9 0 .3.1.6.2.9.1.2.2.4.4.6.2.2.4.3.7.4.3.1.6.1.9.1zM16 5.5h7.1v1.7H16v-1.7z" fill="#fff"/>
                     </svg>
                     <span className="text-sm font-medium">Behance</span>
                   </a>
@@ -117,7 +121,7 @@ const Footer = () => {
                   href="https://facebook.com/logosolve" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="w-10 h-10 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-primary/10 transition-colors" 
+                  className="w-10 h-10 bg-background/80 dark:bg-[#181825]/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-primary/10 transition-colors" 
                   aria-label="Facebook"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
@@ -128,7 +132,7 @@ const Footer = () => {
                   href="https://instagram.com/logosolve" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="w-10 h-10 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-primary/10 transition-colors" 
+                  className="w-10 h-10 bg-background/80 dark:bg-[#181825]/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-primary/10 transition-colors" 
                   aria-label="Instagram"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
@@ -141,7 +145,7 @@ const Footer = () => {
                   href="https://linkedin.com/company/logosolve" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="w-10 h-10 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-primary/10 transition-colors" 
+                  className="w-10 h-10 bg-background/80 dark:bg-[#181825]/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-primary/10 transition-colors" 
                   aria-label="LinkedIn"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
