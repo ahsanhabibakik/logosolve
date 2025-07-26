@@ -26,7 +26,6 @@ export default function Home() {
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight">
                 Crafting <span className="text-primary relative">
                   Distinctive
-                  <span className="absolute bottom-1 left-0 w-full h-1 bg-accent/40 rounded-full"></span>
                 </span> Brand <span className="text-primary">Identities</span> That Resonate
               </h1>
               <p className="mt-8 text-lg md:text-xl text-muted-foreground max-w-xl">
