@@ -7,7 +7,8 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Image from "next/image";
 import ModeToggle from "@/components/mode-toggle";
 import { useTheme } from "next-themes";
-import { Dribbble, ExternalLink } from "lucide-react";
+import { Dribbble } from "lucide-react";
+import { SiBehance } from "react-icons/si";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -76,7 +77,7 @@ const Header = () => {
               className="text-muted-foreground hover:text-primary transition-colors p-1.5 rounded-full hover:bg-primary/10"
               aria-label="Behance Portfolio"
             >
-              <ExternalLink size={20} />
+              <SiBehance size={20} />
             </a>
           </div>
           
@@ -145,7 +146,7 @@ const Header = () => {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   <div className="flex items-center gap-2">
-                    <ExternalLink size={20} />
+                    <SiBehance size={20} />
                     <span>Behance</span>
                   </div>
                 </a>
