@@ -7,44 +7,44 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-background via-secondary/5 to-primary/5 py-24 md:py-36">
+      <section className="relative overflow-hidden bg-gradient-to-b from-background via-secondary/5 to-primary/5 py-16 md:py-20 lg:py-24 min-h-screen flex items-center">
         {/* Background patterns */}
         <div className="absolute inset-0 bg-[url('/hero-pattern.svg')] opacity-5"></div>
         <div className="absolute inset-0 bg-[url('/hero-shapes.svg')] bg-no-repeat bg-cover opacity-70"></div>
         
         {/* Animated background elements */}
-        <div className="absolute top-20 left-10 w-24 h-24 rounded-full bg-primary/10 animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-32 h-32 rounded-full bg-accent/10 animate-pulse" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/3 right-1/4 w-16 h-16 rounded-full bg-primary/5 animate-pulse" style={{ animationDelay: '1.5s' }}></div>
+        <div className="absolute top-20 left-10 w-16 h-16 md:w-24 md:h-24 rounded-full bg-primary/10 animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-20 h-20 md:w-32 md:h-32 rounded-full bg-accent/10 animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/3 right-1/4 w-12 h-12 md:w-16 md:h-16 rounded-full bg-primary/5 animate-pulse" style={{ animationDelay: '1.5s' }}></div>
         
         <div className="container relative">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
-              <div className="inline-block bg-primary/10 text-primary px-5 py-2 rounded-full text-sm font-medium mb-8 backdrop-blur-sm">
+              <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
                 Brand Identity Agency
               </div>
-              <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
                 Crafting <span className="text-primary relative">
                   Distinctive
                 </span> Brand <span className="text-primary">Identities</span> That Resonate
               </h1>
-              <p className="mt-8 text-lg md:text-xl text-muted-foreground max-w-xl">
+              <p className="mt-6 md:mt-8 text-base md:text-lg lg:text-xl text-muted-foreground max-w-xl">
                 We create compelling brand identities, memorable logos, and impactful packaging designs that help businesses stand out in today&apos;s competitive market.
               </p>
-              <div className="mt-12 flex flex-col sm:flex-row gap-5">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-6 rounded-lg shadow-lg shadow-primary/20 transition-all hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-1" asChild>
+              <div className="mt-8 md:mt-12 flex flex-col sm:flex-row gap-4 md:gap-5">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-6 md:px-8 py-4 md:py-6 rounded-lg shadow-lg shadow-primary/20 transition-all hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-1" asChild>
                   <Link href="/portfolio">View Our Work</Link>
                 </Button>
-                <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 px-8 py-6 rounded-lg transition-all hover:-translate-y-1" asChild>
+                <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 px-6 md:px-8 py-4 md:py-6 rounded-lg transition-all hover:-translate-y-1" asChild>
                   <Link href="/contact">Get in Touch</Link>
                 </Button>
               </div>
             </div>
             <div className="hidden lg:flex justify-center items-center">
-              <div className="relative w-full max-w-md aspect-square">
+              <div className="relative w-full max-w-sm lg:max-w-md aspect-square">
                 {/* Decorative elements */}
-                <div className="absolute top-0 left-0 w-64 h-64 bg-primary/10 rounded-lg transform -rotate-6 animate-float" style={{ animationDelay: '0s' }}></div>
-                <div className="absolute top-10 left-10 w-64 h-64 bg-accent/10 rounded-lg transform rotate-6 animate-float" style={{ animationDelay: '0.5s' }}></div>
+                <div className="absolute top-0 left-0 w-48 h-48 lg:w-64 lg:h-64 bg-primary/10 rounded-lg transform -rotate-6 animate-float" style={{ animationDelay: '0s' }}></div>
+                <div className="absolute top-8 left-8 w-48 h-48 lg:w-64 lg:h-64 bg-accent/10 rounded-lg transform rotate-6 animate-float" style={{ animationDelay: '0.5s' }}></div>
                 
                 {/* Main image */}
                 <div className="absolute inset-0 flex items-center justify-center">
@@ -53,16 +53,16 @@ export default function Home() {
                     <Image 
                       src="/portfolio/placeholder-1.svg" 
                       alt="Brand Identity Example" 
-                      width={280} 
-                      height={280} 
-                      className="w-64 h-64 rounded-lg shadow-xl relative z-10 transition-all hover:scale-105 duration-500"
+                      width={240} 
+                      height={240} 
+                      className="w-48 h-48 lg:w-64 lg:h-64 rounded-lg shadow-xl relative z-10 transition-all hover:scale-105 duration-500"
                     />
                   </div>
                 </div>
                 
                 {/* More decorative elements */}
-                <div className="absolute bottom-0 right-0 w-40 h-40 bg-primary/10 rounded-lg transform rotate-12 animate-float" style={{ animationDelay: '1s' }}></div>
-                <div className="absolute bottom-10 right-10 w-40 h-40 bg-accent/10 rounded-lg transform -rotate-12 animate-float" style={{ animationDelay: '1.5s' }}></div>
+                <div className="absolute bottom-0 right-0 w-32 h-32 lg:w-40 lg:h-40 bg-primary/10 rounded-lg transform rotate-12 animate-float" style={{ animationDelay: '1s' }}></div>
+                <div className="absolute bottom-8 right-8 w-32 h-32 lg:w-40 lg:h-40 bg-accent/10 rounded-lg transform -rotate-12 animate-float" style={{ animationDelay: '1.5s' }}></div>
               </div>
             </div>
           </div>
@@ -70,46 +70,46 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-24 bg-background relative">
+      <section className="py-16 md:py-20 lg:py-24 bg-background relative">
         {/* Background decorative elements */}
-        <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-80 h-80 bg-accent/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-0 right-0 w-48 h-48 md:w-64 md:h-64 bg-primary/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-64 h-64 md:w-80 md:h-80 bg-accent/5 rounded-full blur-3xl"></div>
         
         <div className="container relative">
-          <div className="text-center mb-16">
-            <div className="inline-block bg-primary/10 text-primary px-5 py-2 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
+          <div className="text-center mb-12 md:mb-16">
+            <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4 md:mb-6 backdrop-blur-sm">
               What We Do
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">Our Services</h2>
-            <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Our Services</h2>
+            <p className="mt-4 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
               Comprehensive brand identity solutions tailored to your unique business needs
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             <Card className="border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-background/80 dark:bg-[#181825]/80 backdrop-blur-sm">
-              <CardHeader className="pb-4">
-                <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 transform -rotate-6">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
+              <CardHeader className="pb-3">
+                <div className="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4 md:mb-6 transform -rotate-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary md:w-8 md:h-8">
                     <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
                     <path d="m9 12 2 2 4-4"></path>
                   </svg>
                 </div>
-                <CardTitle className="text-2xl font-bold">Brand Identity</CardTitle>
-                <CardDescription className="text-base mt-2">
+                <CardTitle className="text-xl md:text-2xl font-bold">Brand Identity</CardTitle>
+                <CardDescription className="text-sm md:text-base mt-2">
                   Complete brand identity systems that communicate your values and vision
                 </CardDescription>
               </CardHeader>
-              <CardContent className="pb-4">
-                <p className="text-muted-foreground">
+              <CardContent className="pb-3">
+                <p className="text-sm md:text-base text-muted-foreground">
                   We develop comprehensive brand identities that include logo design, color palettes, typography, and brand guidelines to ensure consistency across all touchpoints.
                 </p>
               </CardContent>
               <CardFooter className="pt-2">
-                <Button variant="ghost" className="text-primary hover:bg-primary/10 group flex items-center gap-2" asChild>
+                <Button variant="ghost" className="text-primary hover:bg-primary/10 group flex items-center gap-2 text-sm md:text-base" asChild>
                   <Link href="/services/brand-identity">
                     Learn More
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:translate-x-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:translate-x-1">
                       <path d="M5 12h14"></path>
                       <path d="m12 5 7 7-7 7"></path>
                     </svg>
@@ -119,28 +119,28 @@ export default function Home() {
             </Card>
 
             <Card className="border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-background/80 dark:bg-[#181825]/80 backdrop-blur-sm">
-              <CardHeader className="pb-4">
-                <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 transform rotate-6">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
+              <CardHeader className="pb-3">
+                <div className="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4 md:mb-6 transform rotate-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary md:w-8 md:h-8">
                     <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
                     <circle cx="13.5" cy="7.5" r=".5"></circle>
                   </svg>
                 </div>
-                <CardTitle className="text-2xl font-bold">Logo Design</CardTitle>
-                <CardDescription className="text-base mt-2">
+                <CardTitle className="text-xl md:text-2xl font-bold">Logo Design</CardTitle>
+                <CardDescription className="text-sm md:text-base mt-2">
                   Memorable logos that capture your brand&apos;s essence
                 </CardDescription>
               </CardHeader>
-              <CardContent className="pb-4">
-                <p className="text-muted-foreground">
+              <CardContent className="pb-3">
+                <p className="text-sm md:text-base text-muted-foreground">
                   Our logo design process focuses on creating distinctive, versatile marks that work across all mediums and stand the test of time while conveying your brand&apos;s personality.
                 </p>
               </CardContent>
               <CardFooter className="pt-2">
-                <Button variant="ghost" className="text-primary hover:bg-primary/10 group flex items-center gap-2" asChild>
+                <Button variant="ghost" className="text-primary hover:bg-primary/10 group flex items-center gap-2 text-sm md:text-base" asChild>
                   <Link href="/services/logo-design">
                     Learn More
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:translate-x-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:translate-x-1">
                       <path d="M5 12h14"></path>
                       <path d="m12 5 7 7-7 7"></path>
                     </svg>
@@ -150,29 +150,29 @@ export default function Home() {
             </Card>
 
             <Card className="border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-background/80 dark:bg-[#181825]/80 backdrop-blur-sm">
-              <CardHeader className="pb-4">
-                <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 transform -rotate-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
+              <CardHeader className="pb-3">
+                <div className="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4 md:mb-6 transform -rotate-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary md:w-8 md:h-8">
                     <path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z"></path>
                     <path d="m3 9 2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9"></path>
                     <path d="M12 3v6"></path>
                   </svg>
                 </div>
-                <CardTitle className="text-2xl font-bold">Product Packaging</CardTitle>
-                <CardDescription className="text-base mt-2">
+                <CardTitle className="text-xl md:text-2xl font-bold">Product Packaging</CardTitle>
+                <CardDescription className="text-sm md:text-base mt-2">
                   Eye-catching packaging that sells your product
                 </CardDescription>
               </CardHeader>
-              <CardContent className="pb-4">
-                <p className="text-muted-foreground">
+              <CardContent className="pb-3">
+                <p className="text-sm md:text-base text-muted-foreground">
                   We design packaging solutions that not only protect your product but also communicate its value, attract attention on shelves, and enhance the overall customer experience.
                 </p>
               </CardContent>
               <CardFooter className="pt-2">
-                <Button variant="ghost" className="text-primary hover:bg-primary/10 group flex items-center gap-2" asChild>
+                <Button variant="ghost" className="text-primary hover:bg-primary/10 group flex items-center gap-2 text-sm md:text-base" asChild>
                   <Link href="/services/packaging">
                     Learn More
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:translate-x-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:translate-x-1">
                       <path d="M5 12h14"></path>
                       <path d="m12 5 7 7-7 7"></path>
                     </svg>
@@ -185,23 +185,23 @@ export default function Home() {
       </section>
 
       {/* Portfolio Preview Section */}
-      <section className="py-24 bg-gradient-to-b from-background via-secondary/5 to-background relative overflow-hidden">
+      <section className="py-16 md:py-20 lg:py-24 bg-gradient-to-b from-background via-secondary/5 to-background relative overflow-hidden">
         {/* Background decorative elements */}
-        <div className="absolute top-40 left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-80 h-80 bg-accent/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-40 left-10 w-48 h-48 md:w-64 md:h-64 bg-primary/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-64 h-64 md:w-80 md:h-80 bg-accent/5 rounded-full blur-3xl"></div>
         
         <div className="container relative">
-          <div className="text-center mb-16">
-            <div className="inline-block bg-primary/10 text-primary px-5 py-2 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
+          <div className="text-center mb-12 md:mb-16">
+            <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4 md:mb-6 backdrop-blur-sm">
               Our Work
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">Featured Projects</h2>
-            <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Featured Projects</h2>
+            <p className="mt-4 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
               A selection of our recent brand identity and design work
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {[
               { id: 1, name: "Evergreen Organics", category: "Brand Identity", image: "/portfolio/placeholder-1.svg" },
               { id: 2, name: "Pulse Fitness", category: "Logo Design", image: "/portfolio/placeholder-2.svg" },
@@ -220,12 +220,12 @@ export default function Home() {
                     height={400}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-primary/60 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col items-center justify-center p-6">
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-primary/60 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col items-center justify-center p-4 md:p-6">
                     <div className="transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
-                      <h3 className="text-white font-bold text-xl mb-2">{project.name}</h3>
-                      <div className="w-12 h-1 bg-accent mx-auto mb-4 rounded-full"></div>
-                      <p className="text-white/90 text-sm mb-6">{project.category}</p>
-                      <Button variant="outline" size="sm" className="text-white border-white hover:bg-white hover:text-primary" asChild>
+                      <h3 className="text-white font-bold text-lg md:text-xl mb-2">{project.name}</h3>
+                      <div className="w-10 md:w-12 h-1 bg-accent mx-auto mb-3 md:mb-4 rounded-full"></div>
+                      <p className="text-white/90 text-xs md:text-sm mb-4 md:mb-6">{project.category}</p>
+                      <Button variant="outline" size="sm" className="text-white border-white hover:bg-white hover:text-primary text-xs md:text-sm" asChild>
                         <Link href={`/portfolio/project-${project.id}`}>View Project</Link>
                       </Button>
                     </div>
@@ -235,12 +235,12 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="mt-16 text-center">
-            <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 rounded-lg shadow-lg shadow-primary/20 transition-all hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-1" asChild>
+          <div className="mt-12 md:mt-16 text-center">
+            <Button className="bg-primary hover:bg-primary/90 text-white px-6 md:px-8 py-4 md:py-6 rounded-lg shadow-lg shadow-primary/20 transition-all hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-1" asChild>
               <Link href="/portfolio">
                 <span className="flex items-center gap-2">
                   View All Projects
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>
@@ -252,23 +252,23 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-24 bg-background relative">
+      <section className="py-16 md:py-20 lg:py-24 bg-background relative">
         {/* Background decorative elements */}
-        <div className="absolute top-20 right-20 w-72 h-72 bg-primary/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-20 w-72 h-72 bg-accent/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-20 right-20 w-48 h-48 md:w-72 md:h-72 bg-primary/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-20 w-48 h-48 md:w-72 md:h-72 bg-accent/5 rounded-full blur-3xl"></div>
         
         <div className="container relative">
-          <div className="text-center mb-16">
-            <div className="inline-block bg-primary/10 text-primary px-5 py-2 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
+          <div className="text-center mb-12 md:mb-16">
+            <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4 md:mb-6 backdrop-blur-sm">
               Client Feedback
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">What Our Clients Say</h2>
-            <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">What Our Clients Say</h2>
+            <p className="mt-4 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
               Don&apos;t just take our word for it — hear from some of our satisfied clients
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-stretch">
             {[
               {
                 quote: "LogoSolve transformed our brand identity completely. The new logo and visual system perfectly capture our company&apos;s values and have helped us stand out in a competitive market.",
@@ -289,25 +289,25 @@ export default function Home() {
                 company: "Quantum Tech"
               }
             ].map((testimonial, index) => (
-              <div key={index} className="flex flex-col justify-between h-full bg-background/80 dark:bg-[#181825]/80 backdrop-blur-sm p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-border/50 relative">
+              <div key={index} className="flex flex-col justify-between h-full bg-background/80 dark:bg-[#181825]/80 backdrop-blur-sm p-6 md:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-border/50 relative">
                 {/* Decorative quote mark */}
-                <div className="absolute top-6 left-6">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="currentColor" className="text-primary/10">
+                <div className="absolute top-4 md:top-6 left-4 md:left-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="currentColor" className="text-primary/10 md:w-[60px] md:h-[60px]">
                     <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path>
                     <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
                   </svg>
                 </div>
                 {/* Quote content */}
                 <div className="relative z-10 flex-1 flex flex-col justify-between">
-                  <p className="text-muted-foreground mb-8 italic text-lg leading-relaxed">&quot;{testimonial.quote}&quot;</p>
+                  <p className="text-muted-foreground mb-6 md:mb-8 italic text-sm md:text-lg leading-relaxed">&quot;{testimonial.quote}&quot;</p>
                   {/* Author info with gradient border */}
-                  <div className="flex items-center pt-6 mt-auto border-t border-gradient-to-r from-primary/20 via-accent/20 to-primary/20">
-                    <div className="w-14 h-14 bg-gradient-to-br from-primary/30 to-accent/30 rounded-full flex items-center justify-center mr-4 shadow-md">
-                      <span className="text-primary font-bold text-lg">{testimonial.author.charAt(0)}</span>
+                  <div className="flex items-center pt-4 md:pt-6 mt-auto border-t border-gradient-to-r from-primary/20 via-accent/20 to-primary/20">
+                    <div className="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-primary/30 to-accent/30 rounded-full flex items-center justify-center mr-3 md:mr-4 shadow-md">
+                      <span className="text-primary font-bold text-base md:text-lg">{testimonial.author.charAt(0)}</span>
                     </div>
                     <div className="flex flex-col justify-center">
-                      <h4 className="font-bold text-lg leading-tight">{testimonial.author}</h4>
-                      <p className="text-sm text-primary/80 leading-tight">{testimonial.position}, {testimonial.company}</p>
+                      <h4 className="font-bold text-base md:text-lg leading-tight">{testimonial.author}</h4>
+                      <p className="text-xs md:text-sm text-primary/80 leading-tight">{testimonial.position}, {testimonial.company}</p>
                     </div>
                   </div>
                 </div>
@@ -316,17 +316,17 @@ export default function Home() {
           </div>
 
           {/* Client Logos */}
-          <div className="mt-20 bg-background/50 dark:bg-[#181825]/50 backdrop-blur-sm py-12 px-8 rounded-2xl shadow-sm">
-            <h3 className="text-center text-xl font-medium mb-10">Trusted by innovative companies</h3>
-            <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20">
+          <div className="mt-16 md:mt-20 bg-background/50 dark:bg-[#181825]/50 backdrop-blur-sm py-8 md:py-12 px-6 md:px-8 rounded-2xl shadow-sm">
+            <h3 className="text-center text-lg md:text-xl font-medium mb-8 md:mb-10">Trusted by innovative companies</h3>
+            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-20">
               <div className="transform hover:scale-110 transition-transform duration-300">
-                <Image src="/clients/client-1.svg" alt="Acme Corp" width={120} height={60} className="h-16 opacity-80 hover:opacity-100 transition-opacity" />
+                <Image src="/clients/client-1.svg" alt="Acme Corp" width={120} height={60} className="h-12 md:h-16 opacity-80 hover:opacity-100 transition-opacity" />
               </div>
               <div className="transform hover:scale-110 transition-transform duration-300">
-                <Image src="/clients/client-2.svg" alt="Zenith Inc" width={120} height={60} className="h-16 opacity-80 hover:opacity-100 transition-opacity" />
+                <Image src="/clients/client-2.svg" alt="Zenith Inc" width={120} height={60} className="h-12 md:h-16 opacity-80 hover:opacity-100 transition-opacity" />
               </div>
               <div className="transform hover:scale-110 transition-transform duration-300">
-                <Image src="/clients/client-3.svg" alt="Quantum Tech" width={120} height={60} className="h-16 opacity-80 hover:opacity-100 transition-opacity" />
+                <Image src="/clients/client-3.svg" alt="Quantum Tech" width={120} height={60} className="h-12 md:h-16 opacity-80 hover:opacity-100 transition-opacity" />
               </div>
             </div>
           </div>
@@ -334,15 +334,15 @@ export default function Home() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-secondary/10 relative overflow-hidden">
+      <section className="py-16 md:py-20 bg-secondary/10 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/hero-pattern.svg')] opacity-5"></div>
         <div className="container relative">
-          <div className="text-center mb-16">
-            <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
+          <div className="text-center mb-12 md:mb-16">
+            <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4 md:mb-6">
               Our Approach
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold">Our Design Process</h2>
-            <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">Our Design Process</h2>
+            <p className="mt-4 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
               A collaborative approach to creating effective brand identities
             </p>
           </div>
@@ -351,14 +351,14 @@ export default function Home() {
             {/* Connection Line */}
             <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-primary/10 via-primary/30 to-primary/10 transform -translate-y-1/2 z-0"></div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 relative z-10">
               {[
                 {
                   step: "01",
                   title: "Discovery",
                   description: "We learn about your business, goals, audience, and competition to understand your unique needs.",
                   icon: (
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary md:w-6 md:h-6">
                       <circle cx="12" cy="12" r="10"></circle>
                       <line x1="12" y1="8" x2="12" y2="12"></line>
                       <line x1="12" y1="16" x2="12.01" y2="16"></line>
@@ -370,7 +370,7 @@ export default function Home() {
                   title: "Strategy",
                   description: "We develop a strategic foundation for your brand that aligns with your business objectives.",
                   icon: (
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary md:w-6 md:h-6">
                       <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
                       <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
                     </svg>
@@ -381,7 +381,7 @@ export default function Home() {
                   title: "Design",
                   description: "Our creative team crafts visual elements that bring your brand to life in a distinctive way.",
                   icon: (
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary md:w-6 md:h-6">
                       <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
                       <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
                       <path d="M2 2l7.586 7.586"></path>
@@ -394,30 +394,30 @@ export default function Home() {
                   title: "Delivery",
                   description: "We provide all the assets and guidelines you need to implement your new brand identity.",
                   icon: (
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary md:w-6 md:h-6">
                       <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
                       <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
                     </svg>
                   )
                 }
               ].map((process) => (
-                <div key={process.step} className="flex flex-col items-center text-center bg-background dark:bg-[#181825] p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                  <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                    <div className="w-16 h-16 rounded-full bg-background dark:bg-[#181825] flex items-center justify-center">
-                      <span className="text-xl font-bold text-primary">{process.step}</span>
+                <div key={process.step} className="flex flex-col items-center text-center bg-background dark:bg-[#181825] p-4 md:p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                  <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-primary/10 flex items-center justify-center mb-4 md:mb-6">
+                    <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-background dark:bg-[#181825] flex items-center justify-center">
+                      <span className="text-lg md:text-xl font-bold text-primary">{process.step}</span>
                     </div>
                   </div>
-                  <div className="mb-4">
+                  <div className="mb-3 md:mb-4">
                     {process.icon}
                   </div>
-                  <h3 className="text-xl font-medium mb-3">{process.title}</h3>
-                  <p className="text-muted-foreground">{process.description}</p>
+                  <h3 className="text-lg md:text-xl font-medium mb-2 md:mb-3">{process.title}</h3>
+                  <p className="text-sm md:text-base text-muted-foreground">{process.description}</p>
                 </div>
               ))}
             </div>
           </div>
           
-          <div className="mt-16 text-center">
+          <div className="mt-12 md:mt-16 text-center">
             <Button className="bg-primary hover:bg-primary/90 text-white" asChild>
               <Link href="/services">Learn About Our Services</Link>
             </Button>
@@ -425,34 +425,32 @@ export default function Home() {
         </div>
       </section>
 
-
-
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-br from-primary to-primary/80 text-white relative overflow-hidden">
+      <section className="py-16 md:py-20 lg:py-24 bg-gradient-to-br from-primary to-primary/80 text-white relative overflow-hidden">
         {/* Decorative elements */}
-        <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-80 h-80 bg-accent/10 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/4 w-20 h-20 bg-white/5 rounded-full blur-xl animate-pulse"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-32 h-32 bg-accent/10 rounded-full blur-xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-0 right-0 w-48 h-48 md:w-64 md:h-64 bg-white/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-64 h-64 md:w-80 md:h-80 bg-accent/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/4 w-16 h-16 md:w-20 md:h-20 bg-white/5 rounded-full blur-xl animate-pulse"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-24 h-24 md:w-32 md:h-32 bg-accent/10 rounded-full blur-xl animate-pulse" style={{ animationDelay: '1s' }}></div>
         
         <div className="container relative">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">Ready to Transform Your Brand?</h2>
-            <div className="w-24 h-1 bg-accent/60 mx-auto mb-8 rounded-full"></div>
-            <p className="mt-6 text-lg md:text-xl text-white/90 max-w-2xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">Ready to Transform Your Brand?</h2>
+            <div className="w-16 md:w-24 h-1 bg-accent/60 mx-auto mb-6 md:mb-8 rounded-full"></div>
+            <p className="mt-4 md:mt-6 text-base md:text-lg lg:text-xl text-white/90 max-w-2xl mx-auto">
               Let&apos;s collaborate to create a brand identity that resonates with your audience and helps your business thrive in today&apos;s competitive market.
             </p>
-            <div className="mt-12">
+            <div className="mt-8 md:mt-12">
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="text-white border-white hover:bg-white hover:text-primary px-10 py-7 rounded-xl text-lg font-medium shadow-lg shadow-primary-dark/20 transition-all hover:shadow-xl hover:shadow-primary-dark/30 hover:-translate-y-1" 
+                className="text-white border-white hover:bg-white hover:text-primary px-8 md:px-10 py-5 md:py-7 rounded-xl text-base md:text-lg font-medium shadow-lg shadow-primary-dark/20 transition-all hover:shadow-xl hover:shadow-primary-dark/30 hover:-translate-y-1" 
                 asChild
               >
                 <Link href="/contact">
-                  <span className="flex items-center gap-3">
+                  <span className="flex items-center gap-2 md:gap-3">
                     Get Started
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M5 12h14"></path>
                       <path d="m12 5 7 7-7 7"></path>
                     </svg>
