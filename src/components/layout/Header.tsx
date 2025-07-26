@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Image from "next/image";
+import ModeToggle from "@/components/mode-toggle";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,12 +23,13 @@ const Header = () => {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center space-x-2">
-            <img
+            <Image
               src="/logo.svg"
               alt="LogoSolve"
               width={140}
               height={32}
               className="h-8 w-auto"
+              priority
             />
           </Link>
         </div>
@@ -43,6 +45,7 @@ const Header = () => {
               {item.name}
             </Link>
           ))}
+          <ModeToggle />
           
           {/* Social Media Links */}
           <div className="flex items-center gap-3 border-l pl-4 border-border/40">
@@ -110,6 +113,7 @@ const Header = () => {
               ))}
               {/* Social Media Links for Mobile */}
               <div className="flex items-center gap-4 mt-6 pt-6 border-t border-border/40">
+                <ModeToggle />
                 <a 
                   href="https://dribbble.com/logosolve" 
                   target="_blank" 
