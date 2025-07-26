@@ -88,7 +88,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-white/80 backdrop-blur-sm">
+            <Card className="border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-background/80 dark:bg-[#181825]/80 backdrop-blur-sm">
               <CardHeader className="pb-4">
                 <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 transform -rotate-6">
                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
@@ -119,7 +119,7 @@ export default function Home() {
               </CardFooter>
             </Card>
 
-            <Card className="border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-white/80 backdrop-blur-sm">
+            <Card className="border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-background/80 dark:bg-[#181825]/80 backdrop-blur-sm">
               <CardHeader className="pb-4">
                 <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 transform rotate-6">
                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
@@ -150,7 +150,7 @@ export default function Home() {
               </CardFooter>
             </Card>
 
-            <Card className="border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-white/80 backdrop-blur-sm">
+            <Card className="border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-background/80 dark:bg-[#181825]/80 backdrop-blur-sm">
               <CardHeader className="pb-4">
                 <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 transform -rotate-3">
                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
@@ -290,7 +290,7 @@ export default function Home() {
                 company: "Quantum Tech"
               }
             ].map((testimonial, index) => (
-              <div key={index} className="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-border/50 relative">
+              <div key={index} className="bg-background/80 dark:bg-[#181825]/80 backdrop-blur-sm p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-border/50 relative">
                 {/* Decorative quote mark */}
                 <div className="absolute top-6 left-6">
                   <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="currentColor" className="text-primary/10">
@@ -319,7 +319,7 @@ export default function Home() {
           </div>
 
           {/* Client Logos */}
-          <div className="mt-20 bg-white/50 backdrop-blur-sm py-12 px-8 rounded-2xl shadow-sm">
+          <div className="mt-20 bg-background/50 dark:bg-[#181825]/50 backdrop-blur-sm py-12 px-8 rounded-2xl shadow-sm">
             <h3 className="text-center text-xl font-medium mb-10">Trusted by innovative companies</h3>
             <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20">
               <div className="transform hover:scale-110 transition-transform duration-300">
@@ -404,9 +404,9 @@ export default function Home() {
                   )
                 }
               ].map((process) => (
-                <div key={process.step} className="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <div key={process.step} className="flex flex-col items-center text-center bg-background dark:bg-[#181825] p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
                   <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                    <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center">
+                    <div className="w-16 h-16 rounded-full bg-background dark:bg-[#181825] flex items-center justify-center">
                       <span className="text-xl font-bold text-primary">{process.step}</span>
                     </div>
                   </div>
