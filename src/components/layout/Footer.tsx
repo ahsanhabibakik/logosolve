@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { Dribbble } from "lucide-react";
+import { SiBehance } from "react-icons/si";
 
 const Footer = () => {
   return (
@@ -74,10 +76,9 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li>
                 <div className="flex flex-col gap-2 text-sm">
-                  <span>hello@logosolve.com</span>
-                  <span>+1 (234) 567-890</span>
-                  <span>Num: +8801884276758</span>
-                  <span>Gmail: logosolve@gmail.com</span>
+                  <span>+8801884276758</span>
+                  <span>logosolve@gmail.com</span>
+                  <span>2no gate, CDA Avenue, Chittagong.</span>
                 </div>
               </li>
               
@@ -118,6 +119,26 @@ const Footer = () => {
                     <rect x="2" y="9" width="4" height="12"></rect>
                     <circle cx="4" cy="4" r="2"></circle>
                   </svg>
+                </a>
+                <a 
+                  href="https://dribbble.com/logosolve" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center gap-2 px-3 py-2 bg-background/80 dark:bg-[#181825]/80 backdrop-blur-sm rounded-lg hover:bg-primary/10 transition-colors group"
+                  aria-label="Dribbble"
+                >
+                  <Dribbble size={18} />
+                  <span className="text-sm font-medium">Dribbble</span>
+                </a>
+                <a 
+                  href="https://behance.net/logosolve" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center gap-2 px-3 py-2 bg-background/80 dark:bg-[#181825]/80 backdrop-blur-sm rounded-lg hover:bg-primary/10 transition-colors group"
+                  aria-label="Behance"
+                >
+                  <SiBehance size={18} />
+                  <span className="text-sm font-medium">Behance</span>
                 </a>
               </li>
             </ul>

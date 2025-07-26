@@ -7,6 +7,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Image from "next/image";
 import ModeToggle from "@/components/mode-toggle";
 import { useTheme } from "next-themes";
+import { Dribbble, ExternalLink } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -66,7 +67,7 @@ const Header = () => {
               className="text-muted-foreground hover:text-primary transition-colors p-1.5 rounded-full hover:bg-primary/10"
               aria-label="Dribbble Portfolio"
             >
-              <Image src="/logo/dribbble-logo.svg" alt="Dribbble" width={20} height={20} className="object-contain" />
+              <Dribbble size={20} />
             </a>
             <a 
               href="https://behance.net/logosolve" 
@@ -75,11 +76,13 @@ const Header = () => {
               className="text-muted-foreground hover:text-primary transition-colors p-1.5 rounded-full hover:bg-primary/10"
               aria-label="Behance Portfolio"
             >
-              <Image src="/logo/behance-logo.svg" alt="Behance" width={20} height={20} className="object-contain" />
+              <ExternalLink size={20} />
             </a>
           </div>
           
-          <Button className="bg-primary hover:bg-primary/90 text-white">Get Started</Button>
+          <Button className="bg-primary hover:bg-primary/90 text-white" asChild>
+            <Link href="/contact">Get Started</Link>
+          </Button>
         </nav>
 
         {/* Mobile Navigation */}
@@ -129,7 +132,7 @@ const Header = () => {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   <div className="flex items-center gap-2">
-                    <Image src="/logo/dribbble-logo.svg" alt="Dribbble" width={20} height={20} className="object-contain" />
+                    <Dribbble size={20} />
                     <span>Dribbble</span>
                   </div>
                 </a>
@@ -142,14 +145,14 @@ const Header = () => {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   <div className="flex items-center gap-2">
-                    <Image src="/logo/behance-logo.svg" alt="Behance" width={20} height={20} className="object-contain" />
+                    <ExternalLink size={20} />
                     <span>Behance</span>
                   </div>
                 </a>
               </div>
               
               <Button className="mt-6 w-full" onClick={() => setIsMenuOpen(false)}>
-                Get Started
+                <Link href="/contact">Get Started</Link>
               </Button>
             </nav>
           </SheetContent>
