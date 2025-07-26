@@ -6,9 +6,11 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Image from "next/image";
 import ModeToggle from "@/components/mode-toggle";
+import { useTheme } from "next-themes";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { resolvedTheme } = useTheme();
 
   const navItems = [
     { name: "Home", href: "/" },
@@ -23,14 +25,22 @@ const Header = () => {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center space-x-2">
-            <Image
-              src="/logo.svg"
-              alt="LogoSolve"
-              width={140}
-              height={32}
-              className="h-8 w-auto"
-              priority
-            />
+            <span className="relative h-8 w-[140px] block">
+              <Image
+                src="/logo/Logo-black.png"
+                alt="LogoSolve"
+                fill
+                className="object-contain h-8 w-auto block dark:hidden"
+                priority
+              />
+              <Image
+                src="/logo/Logo-white.png"
+                alt="LogoSolve"
+                fill
+                className="object-contain h-8 w-auto hidden dark:block"
+                priority
+              />
+            </span>
           </Link>
         </div>
 
