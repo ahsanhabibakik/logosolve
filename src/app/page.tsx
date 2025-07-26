@@ -268,7 +268,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
             {[
               {
                 quote: "LogoSolve transformed our brand identity completely. The new logo and visual system perfectly capture our company&apos;s values and have helped us stand out in a competitive market.",
@@ -289,7 +289,7 @@ export default function Home() {
                 company: "Quantum Tech"
               }
             ].map((testimonial, index) => (
-              <div key={index} className="bg-background/80 dark:bg-[#181825]/80 backdrop-blur-sm p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-border/50 relative">
+              <div key={index} className="flex flex-col justify-between h-full bg-background/80 dark:bg-[#181825]/80 backdrop-blur-sm p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-border/50 relative">
                 {/* Decorative quote mark */}
                 <div className="absolute top-6 left-6">
                   <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="currentColor" className="text-primary/10">
@@ -297,19 +297,17 @@ export default function Home() {
                     <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
                   </svg>
                 </div>
-                
                 {/* Quote content */}
-                <div className="relative z-10">
+                <div className="relative z-10 flex-1 flex flex-col justify-between">
                   <p className="text-muted-foreground mb-8 italic text-lg leading-relaxed">&quot;{testimonial.quote}&quot;</p>
-                  
                   {/* Author info with gradient border */}
-                  <div className="flex items-center pt-6 border-t border-gradient-to-r from-primary/20 via-accent/20 to-primary/20">
+                  <div className="flex items-center pt-6 mt-auto border-t border-gradient-to-r from-primary/20 via-accent/20 to-primary/20">
                     <div className="w-14 h-14 bg-gradient-to-br from-primary/30 to-accent/30 rounded-full flex items-center justify-center mr-4 shadow-md">
                       <span className="text-primary font-bold text-lg">{testimonial.author.charAt(0)}</span>
                     </div>
-                    <div>
-                      <h4 className="font-bold text-lg">{testimonial.author}</h4>
-                      <p className="text-sm text-primary/80">{testimonial.position}, {testimonial.company}</p>
+                    <div className="flex flex-col justify-center">
+                      <h4 className="font-bold text-lg leading-tight">{testimonial.author}</h4>
+                      <p className="text-sm text-primary/80 leading-tight">{testimonial.position}, {testimonial.company}</p>
                     </div>
                   </div>
                 </div>

@@ -73,39 +73,11 @@ const Footer = () => {
             <h3 className="font-medium text-foreground mb-4">Connect</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="mailto:hello@logosolve.com" className="text-muted-foreground hover:text-primary transition-colors">
-                  hello@logosolve.com
-                </a>
-              </li>
-              <li>
-                <a href="tel:+1234567890" className="text-muted-foreground hover:text-primary transition-colors">
-                  +1 (234) 567-890
-                </a>
-              </li>
-              <li>
-                <h4 className="font-medium text-sm mb-3">Follow Our Work</h4>
-                <div className="flex flex-wrap gap-3">
-                  <a 
-                    href="https://dribbble.com/logosolve" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="flex items-center gap-2 px-3 py-2 bg-background/80 dark:bg-[#181825]/80 backdrop-blur-sm rounded-lg hover:bg-primary/10 transition-colors group"
-                    aria-label="Dribbble"
-                  >
-                    <Image src="/logo/dribbble-logo.png" alt="Dribbble" width={18} height={18} className="object-contain" />
-                    <span className="text-sm font-medium">Dribbble</span>
-                  </a>
-                  
-                  <a 
-                    href="https://behance.net/logosolve" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="flex items-center gap-2 px-3 py-2 bg-background/80 dark:bg-[#181825]/80 backdrop-blur-sm rounded-lg hover:bg-primary/10 transition-colors group"
-                    aria-label="Behance"
-                  >
-                    <Image src="/logo/behance-logo.png" alt="Behance" width={18} height={18} className="object-contain" />
-                    <span className="text-sm font-medium">Behance</span>
-                  </a>
+                <div className="flex flex-col gap-2 text-sm">
+                  <span>hello@logosolve.com</span>
+                  <span>+1 (234) 567-890</span>
+                  <span>Num: +8801884276758</span>
+                  <span>Gmail: logosolve@gmail.com</span>
                 </div>
               </li>
               

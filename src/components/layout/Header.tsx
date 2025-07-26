@@ -66,7 +66,7 @@ const Header = () => {
               className="text-muted-foreground hover:text-primary transition-colors p-1.5 rounded-full hover:bg-primary/10"
               aria-label="Dribbble Portfolio"
             >
-              <Image src="/logo/dribbble-logo.png" alt="Dribbble" width={20} height={20} className="object-contain" />
+              <Image src="/logo/dribbble-logo.svg" alt="Dribbble" width={20} height={20} className="object-contain" />
             </a>
             <a 
               href="https://behance.net/logosolve" 
@@ -75,7 +75,7 @@ const Header = () => {
               className="text-muted-foreground hover:text-primary transition-colors p-1.5 rounded-full hover:bg-primary/10"
               aria-label="Behance Portfolio"
             >
-              <Image src="/logo/behance-logo.png" alt="Behance" width={20} height={20} className="object-contain" />
+              <Image src="/logo/behance-logo.svg" alt="Behance" width={20} height={20} className="object-contain" />
             </a>
           </div>
           
@@ -129,7 +129,7 @@ const Header = () => {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   <div className="flex items-center gap-2">
-                    <Image src="/logo/dribbble-logo.png" alt="Dribbble" width={20} height={20} className="object-contain" />
+                    <Image src="/logo/dribbble-logo.svg" alt="Dribbble" width={20} height={20} className="object-contain" />
                     <span>Dribbble</span>
                   </div>
                 </a>
@@ -142,7 +142,7 @@ const Header = () => {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   <div className="flex items-center gap-2">
-                    <Image src="/logo/behance-logo.png" alt="Behance" width={20} height={20} className="object-contain" />
+                    <Image src="/logo/behance-logo.svg" alt="Behance" width={20} height={20} className="object-contain" />
                     <span>Behance</span>
                   </div>
                 </a>
